@@ -1,0 +1,77 @@
+# 雙北市預售屋成交資料分析：GitHub 公開檔案管理
+# 本機保留完整專案；Git 只追蹤程式碼、SQL、圖表及公開說明文件。
+
+# 原始官方檔案、逐筆交易紀錄與清理中間檔（僅保留於本機）
+/data/
+
+# 私人專案管理與個人驗收紀錄（僅保留於本機）
+/PROJECT_SPEC.md
+/PROJECT_STATUS.md
+/FILE_STRUCTURE.md
+/VALIDATION.txt
+
+# 本機密碼、金鑰及環境設定
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+local-secrets.properties
+secrets.properties
+*secrets*.json
+*credentials*.json
+
+# 交易資料常見的其他匯出格式：預設不公開，僅允許下方正式彙總表
+*.csv
+*.xls
+*.xlsx
+*.ods
+!/charts/eight_chart_summary.csv
+!/charts/full_month_statistics.csv
+!/charts/research_year_statistics.csv
+!/docs/chart_inventory.csv
+
+# Python、Spyder、編輯器與虛擬環境產生的檔案
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.spyproject/
+.idea/
+.vscode/
+.conda/
+.venv/
+venv/
+env/
+
+# 本機備份、壓縮封裝、測試暫存與系統檔案
+*.zip
+*.7z
+*.rar
+*.tmp
+*.temp
+*.bak
+*.log
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 資料庫本機檔案與備份（正式 SQL 程式仍可提交）
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+*.sql.zip
+*.dump
+*.bak.sql
+
+# charts/ 的正式 PNG 可公開；CSV 只有上方指定的彙總表例外。
+# README.md、src/、database/、charts/ 及 docs/ 中的正式內容可正常追蹤。
+# 已被 Git 追蹤的檔案不會因加入 .gitignore 而自動取消追蹤。
