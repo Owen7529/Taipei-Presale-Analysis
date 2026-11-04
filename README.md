@@ -122,6 +122,5 @@ src/prepare_chart_assets.py   圖表清單與尺寸檢查
 
 ## 資料來源
 
-[內政部不動產交易實價查詢服務網](https://lvr.land.moi.gov.tw/) · [官方批次公開資料下載](https://plvr.land.moi.gov.tw/DownloadOpenData)
-
-原始官方 ZIP、交易層級 CSV、來源清單及私人專案管理文件均保留於本機。專案採用**單一完整資料夾**，以根目錄 `.gitignore` 排除 `data/`、私人文件與機密設定；GitHub 只提交可公開的程式碼、八張圖、彙總統計及說明文件。請勿將完整專案 ZIP 直接上傳到 GitHub。 若先前已有檔案被 Git 追蹤，`.gitignore` 不會自動取消追蹤，提交前請先檢查 GitHub Desktop 的 Changes 清單。
+- [內政部不動產交易實價查詢服務網](https://lvr.land.moi.gov.tw/)
+- [內政部實價登錄公開資料下載](https://plvr.land.moi.gov.tw/DownloadOpenData)
